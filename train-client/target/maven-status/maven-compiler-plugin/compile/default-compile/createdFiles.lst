@@ -1,0 +1,4 @@
+com\sctoc\microserver\train\client\web\MsgController.class
+com\sctoc\microserver\train\client\service\MsgService.class
+com\sctoc\microserver\train\client\TrainClientApp.class
+com\sctoc\microserver\train\client\service\feign\IFeignMessageService.class

@@ -1,0 +1,27 @@
+server:
+  port: 8888
+  tomcat:
+    min-spare-threads: 20
+    max-threads: 100
+
+spring:
+  application:
+    name: train-config
+  profiles:
+    active: native #设置为本地启动的方式，而不是通过git
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:/conf
+
+eureka:
+  instance:
+    #instance-id:  ${spring.cloud.client.ipAddress}:${server.port}
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+#      defaultZone: http://TRAIN-EUREKA:8761/eureka
+      defaultZone: http://localhost:8761/eureka
+  register-with-eureka: false #是否将自己注册到Eureka Server上，默认为true
+  fetch-registry: false #是否从Eureka Server上获取注册信息，默认为true

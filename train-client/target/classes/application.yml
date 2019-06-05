@@ -1,0 +1,14 @@
+spring:
+    application:
+        name: train-client
+    jackson:
+        date-format: yyyy-MM-dd HH:mm:ss
+        time-zone: GMT+8
+        default-property-inclusion: non_null
+  
+server:
+  port: ${microserver.train-client.port:8950} #启动端口
+  tomcat:
+    min-spare-threads: 20
+    max-threads: 200
+

@@ -1,0 +1,18 @@
+server:
+  port: 8761
+  tomcat:
+    min-spare-threads: 20
+    max-threads: 80
+
+eureka:
+  instance:
+    hostname: TRAIN-EUREKA
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+          defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    enable-self-preservation: false   #设为false，关闭自我保护 。更改Eureka更新频率将打破服务器的自我保护功能，生产环境下不建议自定义这些配置。
+    eviction-interval-timer-in-ms: 600000   #清理间隔（单位毫秒，默认是60*1000）

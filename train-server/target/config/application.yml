@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: train-server
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+      indent_output: false
+      FAIL_ON_EMPTY_BEANS: false
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: train
+          group: qmsg
+        output:
+          destination: train
+          group: qmsg
+      
+  

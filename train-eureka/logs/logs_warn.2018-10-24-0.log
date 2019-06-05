@@ -1,0 +1,10 @@
+2018-10-24 16:53:39.525 |-WARN  [localhost-startStop-1] com.netflix.config.sources.URLConfigurationSource [121] -| No URLs will be polled as dynamic configuration sources.
+2018-10-24 16:53:42.121 |-WARN  [main] com.netflix.config.sources.URLConfigurationSource [121] -| No URLs will be polled as dynamic configuration sources.
+2018-10-24 16:53:43.546 |-WARN  [main] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-24 17:03:43.551 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-24 17:13:43.552 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-24 17:23:43.555 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-24 17:33:43.558 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-24 17:43:43.561 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-24 17:53:43.564 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-24 18:03:43.566 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry

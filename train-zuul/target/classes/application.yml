@@ -1,0 +1,68 @@
+spring:
+  application:
+    name: train-zuul
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  
+server:
+  port: ${microserver.train-zuul.port:8080}
+  tomcat:
+    min-spare-threads: 50
+    max-threads: 200
+
+zuul:
+  ignored-patterns: /**/ace/**
+  prefix: /api/v1    #为zuul设置一个公共的前缀
+  add-host-header: true 
+  stripPrefix: true
+  #retryable: false  #禁止重试
+  ignored-services: hello-service #忽略的service，如果在routes中的设置与此有冲突，以routes为准
+  #stripPrefix: true #转发时去掉Prefix
+  sensitive-headers:
+  sensitiveHeaders:
+  routes:
+    server:
+      path: /server/**
+      serviceId: train-server
+      stripPrefix: false
+    client:
+      path: /client/**
+      serviceId: train-client
+      stripPrefix: false
+    api-b:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods  #修复zuul跨域配置异常的问题 http://www.jb51.net/article/123406.htm
+      path: /api-b/**
+      serviceId: service-feign
+    host: 
+      connect-timeout-millis: 60000
+      socket-timeout-millis: 60000
+
+base-server:
+  zuul:
+    ignore:
+      startWith: /static,/auth/,/demo,/captcha/jwt,/pms
+    jwt:
+      token-header: Authorization
+      expire: 3600
+    auth:
+      user:
+        token-header: Authorization
+        
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'      
+    
+jwt:
+  expire: 3600
+
+eureka:
+    client:
+        healthcheck:
+            enabled: true   #开启健康检查（需要spring-boot-starter-actuator依赖）
+    instance:
+        lease-renewal-interval-in-seconds: 30   #续约更新时间间隔（默认30秒）
+        lease-expiration-duration-in-seconds: 90  #续约到期时间（默认90秒）
+        instance-id: ${spring.cloud.client.ip-address}:${server.port}

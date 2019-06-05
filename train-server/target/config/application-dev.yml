@@ -1,0 +1,11 @@
+server:
+  port: ${microserver.train-server.port:8970} #启动端口
+
+
+logging:
+  level:
+    com.sctoc.bms: debug #不同目录下的日志可配置不同级别
+    org.springfromework.web: info
+    org.hibernate.SQL: debug
+  #采用相对路径方式将日志文件输出到【log\myspringboot.log】
+  file: log\train-server.log 

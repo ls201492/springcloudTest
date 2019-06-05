@@ -1,0 +1,15 @@
+2018-10-29 09:21:01.492 |-WARN  [localhost-startStop-1] com.netflix.config.sources.URLConfigurationSource [121] -| No URLs will be polled as dynamic configuration sources.
+2018-10-29 09:21:04.051 |-WARN  [main] com.netflix.config.sources.URLConfigurationSource [121] -| No URLs will be polled as dynamic configuration sources.
+2018-10-29 09:21:05.182 |-WARN  [main] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-29 09:31:05.184 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-29 09:41:05.187 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-29 09:51:05.209 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-29 10:01:05.211 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-29 10:11:05.214 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-29 10:21:05.216 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-29 10:21:05.411 |-WARN  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry [626] -| DS: Registry: expired lease for UNKNOWN/DESKTOP-K7K175Q:8970
+2018-10-29 10:31:05.218 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-29 10:41:05.222 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-29 10:41:05.412 |-WARN  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry [626] -| DS: Registry: expired lease for TRAIN-CENTER/DESKTOP-K7K175Q:train-center:8970
+2018-10-29 10:51:05.224 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
+2018-10-29 11:01:05.226 |-WARN  [Eureka-PeerNodesUpdater] com.netflix.eureka.cluster.PeerEurekaNodes [156] -| The replica size seems to be empty. Check the route 53 DNS Registry
