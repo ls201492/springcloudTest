@@ -19,7 +19,7 @@ eureka:
         serviceUrl:
 #            defaultZone: ${eureka.url:http://TRAIN-EUREKA:8761/eureka/}
             defaultZone: ${eureka.url:http://localhost:8761/eureka/}
-
+    fetch-registry: true
 #请求和响应GZIP压缩支持
 #feign:
 #  compression:

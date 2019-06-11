@@ -4,8 +4,8 @@ spring:
       discovery:
         enabled: true
         serviceId: train-config
-      name: train-client
-      profile: ${config.profile:dev}
+  application:
+          name: train-client
 management:
   security:
   enabled: false
@@ -17,6 +17,6 @@ eureka:
 #            defaultZone: ${eureka.url:http://BASE-EUREKA:8761/eureka/} #使用主机名定位eureka服务器，便于开发测试
             defaultZone: ${eureka.url:http://localhost:8761/eureka/} #使用主机名定位eureka服务器，便于开发测试
         fetch-registry:
-                        false #是否从Eureka Server上获取注册信息，默认为true
+                        true #是否从Eureka Server上获取注册信息，默认为true
 
 
