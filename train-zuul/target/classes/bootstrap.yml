@@ -17,8 +17,7 @@ eureka:
         prefer-ip-address: true
     client:
         serviceUrl:
-#            defa
-ultZone: ${eureka.url:http://TRAIN-EUREKA:8761/eureka/}
+#            defaultZone: ${eureka.url:http://TRAIN-EUREKA:8761/eureka/}
             defaultZone: ${eureka.url:http://localhost:8761/eureka/}
         fetch-registry: true
 #请求和响应GZIP压缩支持
@@ -44,7 +43,6 @@ ribbon:
 hystrix:
   threadpool:
     default:
-      ##并发执行的最大线程数，默认10
       coreSize: 1000
       ##BlockingQueue的最大队列数
       maxQueueSize: 1000
